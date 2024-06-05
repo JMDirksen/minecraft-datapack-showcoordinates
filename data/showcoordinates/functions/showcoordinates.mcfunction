@@ -1,0 +1,13 @@
+execute store result score @s sc_x run data get entity @s Pos[0]
+execute store result score @s sc_y run data get entity @s Pos[1]
+execute store result score @s sc_z run data get entity @s Pos[2]
+
+execute if entity @s[y_rotation=-180..-157.5] run title @s actionbar ["",{"score":{"name":"@s","objective":"sc_x"}},{"text":" "},{"score":{"name":"@s","objective":"sc_y"}},{"text":" "},{"score":{"name":"@s","objective":"sc_z"}},{"text":" ↑"}]
+execute if entity @s[y_rotation=-157.5..-112.5] run title @s actionbar ["",{"score":{"name":"@s","objective":"sc_x"}},{"text":" "},{"score":{"name":"@s","objective":"sc_y"}},{"text":" "},{"score":{"name":"@s","objective":"sc_z"}},{"text":" ↗"}]
+execute if entity @s[y_rotation=-112.5..-67.5] run title @s actionbar ["",{"score":{"name":"@s","objective":"sc_x"}},{"text":" "},{"score":{"name":"@s","objective":"sc_y"}},{"text":" "},{"score":{"name":"@s","objective":"sc_z"}},{"text":" →"}]
+execute if entity @s[y_rotation=-67.5..-22.5] run title @s actionbar ["",{"score":{"name":"@s","objective":"sc_x"}},{"text":" "},{"score":{"name":"@s","objective":"sc_y"}},{"text":" "},{"score":{"name":"@s","objective":"sc_z"}},{"text":" ↘"}]
+execute if entity @s[y_rotation=-22.5..22.5] run title @s actionbar ["",{"score":{"name":"@s","objective":"sc_x"}},{"text":" "},{"score":{"name":"@s","objective":"sc_y"}},{"text":" "},{"score":{"name":"@s","objective":"sc_z"}},{"text":" ↓"}]
+execute if entity @s[y_rotation=22.5..67.5] run title @s actionbar ["",{"score":{"name":"@s","objective":"sc_x"}},{"text":" "},{"score":{"name":"@s","objective":"sc_y"}},{"text":" "},{"score":{"name":"@s","objective":"sc_z"}},{"text":" ↙"}]
+execute if entity @s[y_rotation=67.5..112.5] run title @s actionbar ["",{"score":{"name":"@s","objective":"sc_x"}},{"text":" "},{"score":{"name":"@s","objective":"sc_y"}},{"text":" "},{"score":{"name":"@s","objective":"sc_z"}},{"text":" ←"}]
+execute if entity @s[y_rotation=112.5..157.5] run title @s actionbar ["",{"score":{"name":"@s","objective":"sc_x"}},{"text":" "},{"score":{"name":"@s","objective":"sc_y"}},{"text":" "},{"score":{"name":"@s","objective":"sc_z"}},{"text":" ↖"}]
+execute if entity @s[y_rotation=157.5..180] run title @s actionbar ["",{"score":{"name":"@s","objective":"sc_x"}},{"text":" "},{"score":{"name":"@s","objective":"sc_y"}},{"text":" "},{"score":{"name":"@s","objective":"sc_z"}},{"text":" ↑"}]
